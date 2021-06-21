@@ -1,0 +1,12 @@
+logs/
+img/
+*.err
+*.out
+tmp/
+*.zip
+package/
+batches/
+data/
+*.npy
+__pycache__/
+code/__pycache__/
