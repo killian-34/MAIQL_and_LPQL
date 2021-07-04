@@ -112,8 +112,11 @@ Other two-process plots from the paper can be recreated similarly by adjusting `
 ## Setup steps, Digital Ocean install
 Tested as of June 21, 2021
 
-Using 4 GB Memory / 2 Intel vCPUs / 80 GB Disk / NYC1 - Ubuntu 20.04 (LTS) x64, Python 3.8.5
+- Create a droplet on Digital Ocean using the following specifications
+- `4 GB Memory / 2 Intel vCPUs / 80 GB Disk / NYC1 - Ubuntu 20.04 (LTS) x64`
+- After hitting Create Droplet, give the server a minute to spin up, then go to your terminal and ssh into the server using the ipv4 address that Digital Ocean assigned to the droplet, e.g., `ssh -Y root@000.000.000.00`
 
+Once connecte to the server, run the following commands:
 - `git clone https://github.com/killian-34/MAIQL_and_LPQL`
 - `bash make_dirs.sh`
 - `apt install python3-pip --fix-missing`
